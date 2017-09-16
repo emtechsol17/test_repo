@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% extends 'loginapp/base.html' %}
+
+{% load staticfiles %}
+
+{% block body_block %}
+
+<div class="jumbotron">
+
+  {% if registered %}
+
+    <h1>Thanks a lot for registering</h1>
+
+  {% else %}
+
+    <h2>register here</h2>
+
+    <form method="post" enctype="multipart/form-data">
+
+      {% csrf_token %}
+
+      {{ user_form.as_p }}
+      {{ profile_form.as_p }}
+
+      <input type="submit" name="" value="Register">
+
+    </form>
+
+  {% endif %}
+
+
+  <h1>THIS IS DJANGO REGISTRATION PAGE </h1>
+
+</div>
+
+
+{% endblock %}
