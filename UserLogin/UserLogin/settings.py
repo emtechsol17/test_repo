@@ -28,7 +28,7 @@ SECRET_KEY = '(m&p2%nh%^h37tm6s1olgo)yeu5_pr0t*0)3neq^3o%!_r&^&g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['emtechsol17.pythonanywhere.com',]
 
 
 # Application definition
